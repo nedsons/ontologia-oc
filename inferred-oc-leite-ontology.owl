@@ -1,0 +1,1540 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nedson/ontologies/2020/5/oc-leite-ontology#"
+     xml:base="http://www.semanticweb.org/nedson/ontologies/2020/5/oc-leite-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:leite-ontology="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/5/oc-leite-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#ehProduto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#ehProduto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#temProduto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produz -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produz">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produzEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produzEm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#temProduto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#temProduto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitadoEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitadoEm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tweet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitadoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitou"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitou -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitou">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Consumidor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitouEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitouEm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitou"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitadoEm"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#coordenadoriaRegionalIMA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#coordenadoriaRegionalIMA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#dataCadastro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#dataCadastro">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#genero -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#genero">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#idade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#idade">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#microrregiao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#microrregiao">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#municipio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#municipio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#nCadastroIMA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#nCadastroIMA">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#nCertificacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#nCertificacao">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#nome">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produto">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#propriedade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#propriedade">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#proprietario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#proprietario">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#sentimento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#sentimento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#usuario -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#usuario"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Alcool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Alcool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#AlimentacaoAnimal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#AlimentacaoAnimal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#BebidaLacteaFermentada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#BebidaLacteaFermentada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteFermentado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#BebidaLacteaUHT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#BebidaLacteaUHT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVerdeClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Caramelos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Caramelos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Doce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVerdeClaro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVerdeClaro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVermelhoClaro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVermelhoClaro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Cidade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Cidade">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Consumidor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Consumidor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Creme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Creme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeBatido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeBatido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Creme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeDeChantilly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeDeChantilly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Creme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeEsterilizado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeEsterilizado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Creme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeParaCafe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeParaCafe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Creme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeUHT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CremeUHT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Creme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Doce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Doce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#DoceDeLeite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#DoceDeLeite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Doce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#FarinhasLacteas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#FarinhasLacteas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#FermentoLactico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#FermentoLactico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteFermentado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Iogurte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Iogurte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteFermentado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Lactose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Lactose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteAcidofilo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteAcidofilo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteFermentado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteConcentradoDesnatado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteConcentradoDesnatado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVermelhoClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteConcentradoIntegral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteConcentradoIntegral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVermelhoClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteCondensadoDesnatado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteCondensadoDesnatado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVermelhoClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteCondensadoIntegral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteCondensadoIntegral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVermelhoClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteCru -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteCru">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tipos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteDeCabra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteDeCabra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tipos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteDesnatado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteDesnatado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tipos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPoDesnatado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPoDesnatado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPoIntegral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPoIntegral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPoModificado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPoModificado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEsterilizado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEsterilizado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVerdeClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEvaporadoDesnatado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEvaporadoDesnatado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVermelhoClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEvaporadoIntegral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEvaporadoIntegral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVermelhoClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteFermentado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteFermentado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteIntegral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteIntegral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tipos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteSemiDesnatado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteSemiDesnatado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tipos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteUHT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteUHT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVerdeClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leitelho -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leitelho">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Manteiga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#MPC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#MPC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteEmPo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Manteiga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Manteiga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#ManteigaDeGarrafa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#ManteigaDeGarrafa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Manteiga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#ManteigaDePrimeira -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#ManteigaDePrimeira">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Manteiga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#ManteigaExtra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#ManteigaExtra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Manteiga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#MinasGerais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#MinasGerais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Cidade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#OleoDeManteiga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#OleoDeManteiga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Manteiga"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Permeado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Permeado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Pingo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Pingo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Produtor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Produtor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Quefir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Quefir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteFermentado"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoArtesanal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoArtesanal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoCurado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoCurado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaCozida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaCozida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaCrua -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaCrua">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaDura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaDura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaFilada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaFilada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaSemiCozida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaSemiCozida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaSemidura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaSemidura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoFresco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoFresco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoFundido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoFundido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoGordo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoGordo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoMacio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoMacio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoMagro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoMagro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoMinasArtesanal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoMinasArtesanal">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#temProduto"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteCru"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#temProduto"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Pingo"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitadoEm"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#MinasGerais"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tweet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoMole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoMole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoProcessadoUHT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoProcessadoUHT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#CategoriaVerdeClaro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#RedeSocial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#RedeSocial">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijoes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijoes">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#temProduto"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijoes"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Ricota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Ricota">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoFresco"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#temProduto"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#temProduto"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteDesnatado"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteIntegral"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoFresco"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#RiodeJaneiro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#RiodeJaneiro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Cidade"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#SoroEmPo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#SoroEmPo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Sorvete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Sorvete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Doce"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tipos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tipos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tweet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tweet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Twitter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Twitter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Twitter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#RedeSocial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Vinagre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Vinagre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#WPC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#WPC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#WPI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#WPI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Soro"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Coalho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Coalho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoDeMassaSemidura"/>
+        <leite-ontology:ehProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet"/>
+        <leite-ontology:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coalho</leite-ontology:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite_cru -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite_cru">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#LeiteCru"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tipos"/>
+        <leite-ontology:ehProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet"/>
+        <leite-ontology:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leite+cru</leite-ontology:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Pingo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Pingo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Pingo"/>
+        <leite-ontology:ehProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet"/>
+        <leite-ontology:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pingo</leite-ontology:nome>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijão -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijão">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijoes"/>
+        <leite-ontology:ehProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet1"/>
+        <leite-ontology:ehProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet2"/>
+        <leite-ontology:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">requeijao</leite-ontology:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Rio_Paranaiba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Rio_Paranaiba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Cidade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#MinasGerais"/>
+        <leite-ontology:municipio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rio Paranaiba</leite-ontology:municipio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Rio_de_Janeiro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Rio_de_Janeiro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Cidade"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#RiodeJaneiro"/>
+        <leite-ontology:municipio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rio de janeiro</leite-ontology:municipio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#consumidor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#consumidor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Consumidor"/>
+        <leite-ontology:tuitou rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet"/>
+        <leite-ontology:tuitou rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet1"/>
+        <leite-ontology:tuitou rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet2"/>
+        <leite-ontology:tuitouEm rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Rio_Paranaiba"/>
+        <leite-ontology:tuitouEm rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Rio_de_Janeiro"/>
+        <leite-ontology:genero rdf:datatype="http://www.w3.org/2001/XMLSchema#string">masculino</leite-ontology:genero>
+        <leite-ontology:idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</leite-ontology:idade>
+        <leite-ontology:municipio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rio de Janeiro</leite-ontology:municipio>
+        <leite-ontology:sentimento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positivo</leite-ontology:sentimento>
+        <leite-ontology:usuario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</leite-ontology:usuario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produtor0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produtor0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Produtor"/>
+        <leite-ontology:produzEm rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Rio_Paranaiba"/>
+        <leite-ontology:coordenadoriaRegionalIMA rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patos de Minas</leite-ontology:coordenadoriaRegionalIMA>
+        <leite-ontology:dataCadastro rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31/07/2015</leite-ontology:dataCadastro>
+        <leite-ontology:microrregiao rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cerrado</leite-ontology:microrregiao>
+        <leite-ontology:municipio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rio Paranaiba</leite-ontology:municipio>
+        <leite-ontology:nCadastroIMA rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31555040323</leite-ontology:nCadastroIMA>
+        <leite-ontology:nCertificacao rdf:datatype="http://www.w3.org/2001/XMLSchema#int">187</leite-ontology:nCertificacao>
+        <leite-ontology:propriedade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sobrado</leite-ontology:propriedade>
+        <leite-ontology:proprietario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acrísio Mendes da Costa</leite-ontology:proprietario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#QueijoMinasArtesanal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#RedeSocial"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tweet"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Twitter"/>
+        <leite-ontology:temProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Coalho"/>
+        <leite-ontology:temProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite_cru"/>
+        <leite-ontology:temProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Pingo"/>
+        <leite-ontology:tuitadoEm rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Rio_Paranaiba"/>
+        <leite-ontology:tuitadoPor rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#consumidor1"/>
+        <leite-ontology:municipio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rio Paranaiba</leite-ontology:municipio>
+        <leite-ontology:produto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coalho</leite-ontology:produto>
+        <leite-ontology:produto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leite+cru</leite-ontology:produto>
+        <leite-ontology:produto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pingo</leite-ontology:produto>
+        <leite-ontology:sentimento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neutro</leite-ontology:sentimento>
+        <leite-ontology:usuario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</leite-ontology:usuario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#RedeSocial"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijoes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tweet"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Twitter"/>
+        <leite-ontology:temProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijão"/>
+        <leite-ontology:tuitadoEm rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Rio_de_Janeiro"/>
+        <leite-ontology:tuitadoPor rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#consumidor1"/>
+        <leite-ontology:municipio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rio de janeiro</leite-ontology:municipio>
+        <leite-ontology:produto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">requeijao</leite-ontology:produto>
+        <leite-ontology:sentimento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positivo</leite-ontology:sentimento>
+        <leite-ontology:usuario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</leite-ontology:usuario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#queijo-tweet2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Derivados"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Leite"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Queijo"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#RedeSocial"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijoes"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tweet"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Twitter"/>
+        <leite-ontology:temProduto rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Requeijão"/>
+        <leite-ontology:tuitadoPor rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#consumidor1"/>
+        <leite-ontology:municipio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sao paulo</leite-ontology:municipio>
+        <leite-ontology:produto rdf:datatype="http://www.w3.org/2001/XMLSchema#string">requeijao</leite-ontology:produto>
+        <leite-ontology:sentimento rdf:datatype="http://www.w3.org/2001/XMLSchema#string">positivo</leite-ontology:sentimento>
+        <leite-ontology:usuario rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</leite-ontology:usuario>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#pr">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#cid">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tw">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#co">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#us1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#us2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Produtor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#pr"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Cidade"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#cid"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#municipio"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#cid"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#municipio"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#pr"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu1"/>
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu2"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produzEm"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#pr"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#cid"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#municipio"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#cid"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tweet"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tw"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#municipio"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tw"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu2"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu1"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#mu2"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Cidade"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#cid"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitadoEm"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tw"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#cid"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Tweet"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tw"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#Consumidor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#co"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#usuario"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tw"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#us1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#usuario"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#co"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#us2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#us1"/>
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#us2"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tuitadoPor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#tw"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#co"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#produto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#nome"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#y"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#a"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#b"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#temProduto"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/nedson/ontologies/2020/1/leite-ontology#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
